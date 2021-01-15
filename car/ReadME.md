@@ -20,7 +20,6 @@
 	
 
 ## ros (lidar)
-
       ~$ roscd ydlidar/startup	      // Make the shell script to an executable
       ~$ sudo chmod 777 ./*
       ~$ sudo sh initenv.sh
