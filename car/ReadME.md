@@ -32,10 +32,10 @@
          - CMakeList.txt로 가서
 	 - target_link_libraries(test_wiringpi_ros ${catkin_LIBRARIES} -lwiringPi) <<<<lwiringPi를                      - 추가해 준다
 	
-	YDLIDAR TX20 참고 코드 사이트
-	ydlidar tx20 구동 : https://github.com/YDLIDAR/ydlidar_ros/tree/T4
-	ydlidar 활용 :        https://github.com/yangfuyuan/ydlidar_ros2
-	ydlidar ros 활용한 사이트 : https://dayoungkong.wordpress.com/2019/11/21/2019-11-20-how-					to-detect-obstacles-from-four-directions-using-ydlidar/
+    + YDLIDAR TX20 참고 코드 사이트
+	- ydlidar tx20 구동 : https://github.com/YDLIDAR/ydlidar_ros/tree/T4
+	- ydlidar 활용 :        https://github.com/yangfuyuan/ydlidar_ros2
+	- ydlidar ros 활용한 사이트 : https://dayoungkong.wordpress.com/2019/11/21/2019-11-20-how-					to-detect-obstacles-from-four-directions-using-ydlidar/
 	
  + YDLIDAR TX20 정보	
 	- angle distance 에서 0.00555~0.0038이 대략 1cm
