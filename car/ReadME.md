@@ -55,6 +55,7 @@
 	
 ## MOTOR
 	+ wpi#와 physical # 비교 - gpio readall
+	+ gpio를 활용할 때 in1 와 in3 을 ce0 와 ce1에 대응시키고 2 4를 gpio in 0 로 대응 시키지 않으면 오류 생긴다.
 		
 		
 		
