@@ -1,3 +1,8 @@
+#include "sensor_msgs/LaserScan.h"
+#include <map>
+using std::map;
+using std::string;
+
 
 void scanCallback(const sensor_msgs::LaserScan::ConstPtr& scan)
 {
@@ -13,25 +18,8 @@ void scanCallback(const sensor_msgs::LaserScan::ConstPtr& scan)
     region.insert(map<string, float> ::value_type("backright", minRegion(scan->ranges), 408 ,470);
     region.insert(map<string, float> ::value_type("back2", minRegion(scan->ranges), 471, 498));
 }
-//void action(regions)
 
 
 
-float minRegion(std::vector<float> ranges, int start_index, int end_index) {
-    int initial_index = start_index;
-    while (ranges[initial_index] < 0.35)
-        initial_index++;
 
-    float min = ranges[initial_index];
 
-    //float degree = 0;
-    for (int i = initial_index; i < end_index + 1; i++) {
-        if (ranges[i] > 0.35 && ranges[i] < min) {
-            min = ranges[i];
-            //degree = RAD2DEG(scan->angle_min + scan->angle_increment * i);
-        }
-    }
-    printf("%f   \n", min);
-    return min;
-
-}
