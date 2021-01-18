@@ -30,7 +30,7 @@
 	- 3.코드 바꾼 후 catkin_make 해주기
 	- . wiringPi 헤더 파일이 포함 됐을 경우 
          - CMakeList.txt로 가서
-	 - target_link_libraries(test_wiringpi_ros ${catkin_LIBRARIES} -lwiringPi) <<<<lwiringPi를                      - 추가해 준다
+	 - target_link_libraries(test_wiringpi_ros ${catkin_LIBRARIES} -lwiringPi) <<<<lwiringPi를 추가해 준다
 	
     + YDLIDAR TX20 참고 코드 사이트
 	- ydlidar tx20 구동 : https://github.com/YDLIDAR/ydlidar_ros/tree/T4
@@ -39,7 +39,9 @@
 	
  + YDLIDAR TX20 정보	
 	- angle distance 에서 0.00555~0.0038이 대략 1cm
-        - 라이다를 중심으로 오른쪽 + 왼쪽 -
+        - 라이다를 중심으로 오른쪽 - 왼쪽+
+	
+		
 	
 	
 	
