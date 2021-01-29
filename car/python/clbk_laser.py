@@ -1,6 +1,6 @@
-
 def clbk_laser(msg):
     # 720 / 5 = 144
+    global state
     regions = {
         'back_br': minRegion(msg.ranges[0:31]),
         'back_right': minRegion(msg.ranges[31:94]),
@@ -13,5 +13,14 @@ def clbk_laser(msg):
         'back_bl': minRegion(msg.ranges[471:499])
     }
     print(regions['forward'])
-    action(regions)
-    
+    UpdateMyGps()
+    checkState()
+    if (state == 0):
+        print("Controller")
+    elif (state == 1):
+        stay()
+    elif (state == 2 or state == 4):
+        gotoCenter(regions)
+    elif (state == 3):
+        action(regions)
+
